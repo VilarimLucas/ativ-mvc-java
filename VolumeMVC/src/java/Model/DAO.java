@@ -10,10 +10,11 @@ package Model;
  */
 public class DAO {
     
-    public int CalculaValor(IMCmodel soma){
+      public int CalculaValor(VolumeModel soma){
         
-        double res = (int) (soma.getValor1() + soma.getValor2());
+        int res = soma.getValor1() * soma.getValor2() * soma.getValor3();
         return res;
         
     }
+    
 }

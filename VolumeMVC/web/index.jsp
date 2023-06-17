@@ -31,33 +31,32 @@
                     <br>
                     <div class="card border-light text-bg-dark mb-3" style="text-align: left">
                         <div class="card-body">
-                            <h5 class="card-title text-center" >IMC (índice de Massa Corporal)</h5>
+                            <h5 class="card-title text-center" >Volume)</h5>
                             <p class="card-text ">Preencha os seguintes campos</p>
                             <form action="Somar" method="POST">    
 
                                 <div class="input-group mb-3">
-                                    <span class="input-group-text" id="basic-addon1">Peso &nbsp;</span>
-                                    <input type="text"  name="txtVal1" class="form-control" placeholder="Digite o seu peso" aria-label="txtVal1" aria-describedby="basic-addon1">
+                                    <span class="input-group-text" id="basic-addon1">Comprimento &nbsp;</span>
+                                    <input type="text"  name="txtVal1" class="form-control" placeholder="Digite o Comprimento" aria-label="txtVal1" aria-describedby="basic-addon1">
                                 </div>
 
                                 <div class="input-group mb-3">
                                     <span class="input-group-text" id="basic-addon1"> Altura &nbsp;</span>
-                                    <input type="text"  name="txtVal2" class="form-control" placeholder="Digite sua altura" aria-label="txtVal1" aria-describedby="basic-addon1">
+                                    <input type="text"  name="txtVal2" class="form-control" placeholder="Digite a altura" aria-label="txtVal1" aria-describedby="basic-addon1">
+                                    
+                                    <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon1"> Largura &nbsp;</span>
+                                    <input type="text"  name="txtVal3" class="form-control" placeholder="Digite a largura" aria-label="txtVal1" aria-describedby="basic-addon1">
                                 </div>
                                 <p class="card-text ">Selecione seu Gênero</p>
-                                <input type="submit" name="btnMas" value="Masculino" class="btn btn-success" />
-                                <input type="submit" name="btnFem" value="Feminino" class="btn btn-primary" />
+                                <input type="submit" name="btnSomar" value="Somar" class="btn btn-success" />
+                      
 
                             </form>
 
                         </div>
                     </div>
                     <br>
-                    <%
-
-                    
-
-                    %>
 
 
                     <div class="alert alert-success" role="alert">
@@ -67,10 +66,5 @@
                 </div>
             </div>
         </div>
-
-
-
-
-
     </body>
 </html>
