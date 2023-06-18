@@ -8,11 +8,12 @@ package Model;
  *
  * @author vilar
  */
-public class ValoresModel {
+public class CalculadoraModel {
 
     private int valor1;
     private int valor2;
     private String operacao;
+    private String mensagem;
 
     /**
      * @return the valor1
@@ -54,6 +55,20 @@ public class ValoresModel {
      */
     public void setOperacao(String operacao) {
         this.operacao = operacao;
+    }
+
+    /**
+     * @return the mensagem
+     */
+    public String getMensagem() {
+        return mensagem;
+    }
+
+    /**
+     * @param mensagem the mensagem to set
+     */
+    public void setMensagem(String mensagem) {
+        this.mensagem = mensagem;
     }
 
 }

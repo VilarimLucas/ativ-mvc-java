@@ -4,8 +4,8 @@
     Author     : vilar
 --%>
 
-<%@page import="Model.ValoresModel"%>
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import="Model.CalculadoraModel"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -66,10 +66,12 @@
 
                     <%
                         String resultado = request.getParameter("resultado");
+                        String mg = request.getParameter("msg");
 
                     %> 
 
                     <div class="alert alert-success" role="alert">
+                        <b>Mensagem: </b> <%=mg%><br>
                         <b>Resultado:</b> <%=resultado%>
                     </div>
 
