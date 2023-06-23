@@ -6,7 +6,7 @@
 
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="#"><i class="bi bi-book-half"></i> BIBLIOTECA</a>
+        <a class="navbar-brand" href="http://localhost:8080/bibliotecaMVC/admin/home.jsp"><i class="bi bi-book-half"></i> BIBLIOTECA</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -14,7 +14,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Autores</a>
+                    <a class="nav-link" href="http://localhost:8080/bibliotecaMVC/admin/autores/viewAutores.jsp">Autores</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Gêneros</a>
@@ -25,7 +25,7 @@
             </ul>
         </div>
         <div class="ml-auto">
-            <a href="#" class="btn btn-light">Sair</a>
+            <a href="sair.jsp" class="btn btn-light">Sair</a>
         </div>
     </nav>
 </header>

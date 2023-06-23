@@ -13,6 +13,14 @@
     </head>
     <body>
         <%@ include file="header.jsp" %>
-        <h1>Home da Biblioteca</h1>
+        <div class="container text-center">
+            <div class="row align-items-start">
+                <div class="col">
+                    <h1>Home da Biblioteca</h1>
+                </div>
+
+            </div>
+        </div>
+        <%@ include file="footer.jsp" %>
     </body>
 </html>

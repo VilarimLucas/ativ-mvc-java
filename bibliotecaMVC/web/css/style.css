@@ -59,3 +59,32 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
     background-color: #fff;
 }
 /*FIM NAVBAR*/
+
+/*INÍCIO FOOTER*/
+.footer {
+    background-color: rgba(126, 87, 194, 1);
+    color: #fff;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.footer p {
+    margin-bottom: 0;
+}
+/*FIM FOOTER*/
+
+/*INÍCIO VIEW AUTOR*/
+
+.header-vew-autor{
+    padding: 1%;
+}
+.header-vew-autor .col-sm-5{
+    text-align: left;
+}
+.header-vew-autor .input-group{
+    text-align: right;
+}
+
+
+/*FIM VIEW AUTOR*/
