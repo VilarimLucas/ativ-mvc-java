@@ -13,6 +13,7 @@ public class UserModel {
     private String usuario;
     private String senha;
     private int nivel;
+    private boolean autenticado;
 
     /**
      * @return the usuario
@@ -54,6 +55,20 @@ public class UserModel {
      */
     public void setNivel(int nivel) {
         this.nivel = nivel;
+    }
+
+    /**
+     * @return the autenticado
+     */
+    public boolean isAutenticado() {
+        return autenticado;
+    }
+
+    /**
+     * @param autenticado the autenticado to set
+     */
+    public void setAutenticado(boolean autenticado) {
+        this.autenticado = autenticado;
     }
 
 }

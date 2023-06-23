@@ -4,7 +4,6 @@
     Author     : vilar
 --%>
 
-<%@page import="Model.CalculadoraModel"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>

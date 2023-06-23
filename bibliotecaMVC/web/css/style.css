@@ -7,7 +7,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
     Author     : vilar
 */
 
-body {
+/* INÍCIO LOGIN */
+.body-login {
     background-image: linear-gradient(135deg, rgba(76, 175, 80, 0.3), rgba(126, 87, 194, 0.5)), url('http://localhost:8080/bibliotecaMVC/img/bg.jpg');
 
     background-size: cover;
@@ -21,7 +22,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    
+
 }
 
 .login-form {
@@ -39,3 +40,22 @@ body {
 .form-group label{
     font-size: 14px;
 }
+
+/* FIM LOGIN */
+
+/* INÍCIO NAVBAR*/
+.navbar {
+    background-color: rgba(76, 175, 80, 1);
+    padding: 1%;
+}
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: #fff;
+}
+.navbar-toggler {
+    border-color: #fff;
+}
+.navbar-toggler-icon {
+    background-color: #fff;
+}
+/*FIM NAVBAR*/
