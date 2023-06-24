@@ -4,6 +4,8 @@
  */
 package Controller;
 
+import Model.DAO;
+import Model.IMC;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -14,15 +16,14 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author alexs
+ * @author vilar
  */
-@WebServlet(name = "ControllerCalc", urlPatterns = {"/ControllerCalc"})
-public class ControllerHomem extends HttpServlet {
+@WebServlet(name = "IMCController", urlPatterns = {"/IMCController", "/CalcularIMC"})
+public class IMCController extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-
     }
 
     @Override
@@ -30,17 +31,22 @@ public class ControllerHomem extends HttpServlet {
             throws ServletException, IOException {
 
         String action = request.getServletPath();
-        if (action.equals("/Somar")) {
-            DAO acao = new DAO();
-            SomaModel modelo = new SomaModel();
+        DAO acao = new DAO();
+        IMC modelo = new IMC();
 
-            modelo.setValor1(Integer.parseInt(request.getParameter("txtVal1")));
-            modelo.setValor2(Integer.parseInt(request.getParameter("txtVal2")));
+        modelo.setAltura(Double.parseDouble(request.getParameter("txtAltura")));
+        modelo.setSexo(request.getParameter("txtSexo"));
 
-            int resultado = acao.CalculaValor(modelo);
-            response.sendRedirect("index.jsp?resultado=" + resultado);
+        double resultado = 0;
+
+        if (modelo.getSexo().equals("HOMEM")) {
+            resultado = acao.calcularIMCHomem(modelo);
+        } else if (modelo.getSexo().equals("MULHER")) {
+            resultado = acao.calcularIMCMulher(modelo);
+        } else {
+            System.out.println("Sexo não mencionado!");
         }
-
+        response.sendRedirect("index.jsp?resultado=" + resultado);
     }
 
     @Override

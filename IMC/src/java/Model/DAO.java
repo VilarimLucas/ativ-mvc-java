@@ -6,14 +6,18 @@ package Model;
 
 /**
  *
- * @author alexs
+ * @author vilar
  */
 public class DAO {
-    
-    public int CalculaValor(IMCmodel soma){
-        
-        double res = (int) (soma.getValor1() + soma.getValor2());
+
+    public double calcularIMCHomem(IMC imc) {
+        double res = (61.1 * imc.getAltura()) - 58;
         return res;
-        
     }
+
+    public double calcularIMCMulher(IMC imc) {
+        double res = (72.7 * imc.getAltura()) - 44.7;
+        return res;
+    }
+
 }

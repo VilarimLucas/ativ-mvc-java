@@ -47,7 +47,18 @@
                                             </thead>
                                             <tbody>
 
-                                               
+                                                <%
+                                                    List<AutorModel> autores = (List<AutorModel>) request.getAttribute("autores"); // obtenha a lista de autores do atributo do request
+
+                                                    for (AutorModel autor : autores) {
+                                                %>
+                                                <tr>
+                                                    <td><%= autor.getCodAutor()%></td> <!-- Use os getters corretos da sua classe Autor -->
+                                                    <td><%= autor.getNomeAutor()%></td> <!-- Use os getters corretos da sua classe Autor -->
+                                                    <td><a href="#" class="btn btn-primary">Editar</a></td><!-- comment -->
+                                                    <td><a href="#" class="btn btn-danger">Excluir</a></td><!-- comment -->
+                                                </tr>
+                                                <% }%>
 
                                             </tbody>
                                         </table>
