@@ -11,12 +11,12 @@ package Model;
 public class DAO {
 
     public double calcularIMCHomem(IMC imc) {
-        double res = (61.1 * imc.getAltura()) - 58;
+        double res = (72.7 * imc.getAltura()) - 58;
         return res;
     }
 
     public double calcularIMCMulher(IMC imc) {
-        double res = (72.7 * imc.getAltura()) - 44.7;
+        double res = (61.1 * imc.getAltura()) - 44.7;
         return res;
     }
 
